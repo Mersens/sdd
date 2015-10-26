@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/layout_bar"
+        layout="@layout/layout_title" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   
+        android:orientation="horizontal" 
+        android:padding="12dp"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yyxdz" />
+
+        <TextView
+            android:id="@+id/tv_old_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="" />
+    </LinearLayout>
+    
+<TextView
+        android:id="@+id/rz_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="@string/input_yzm"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp" >
+		 <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp" >
+
+            <EditText
+                android:id="@+id/et_email_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edittext_login"
+                android:hint="@string/sryzm"
+                android:inputType="phone"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColorHint="#DDDDDD"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/btn_email_send"
+                style="@style/txt_titleStyle1"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="@string/hqyzm"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_login_selector"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_email_ok"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/btn_login_selector"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/next_step"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+</LinearLayout>
+</LinearLayout>

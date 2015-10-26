@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <include  android:id="@+id/layout_bar" layout="@layout/layout_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="48dp" >
+            <EditText
+                android:id="@+id/et_nick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edittext_login"
+                android:drawableLeft="@drawable/login_account"
+                android:drawablePadding="25dip"
+                android:hint="@string/nick_msg"
+                android:paddingLeft="24dp"
+                android:singleLine="true"
+                android:maxLength="11"
+                android:textColorHint="#DDDDDD"
+                android:textSize="16sp" />
+            
+        </RelativeLayout>
+	    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="48dp" >
+            <EditText
+                android:id="@+id/et_psd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edittext_login"
+                android:hint="@string/psd_msg"
+                android:drawableLeft="@drawable/login_psd"
+                android:drawablePadding="25dip"
+                android:paddingLeft="24dp"
+                android:singleLine="true"
+                android:maxLength="11"
+                android:inputType="textPassword"
+                android:textColorHint="#DDDDDD"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+       <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="48dp" >
+            <EditText
+                android:id="@+id/et_psd_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edittext_login"
+                android:hint="@string/psd_again_msg"
+                android:drawableLeft="@drawable/login_psd"
+                android:drawablePadding="25dip"
+                android:paddingLeft="24dp"
+                android:singleLine="true"
+                android:maxLength="11"
+                android:inputType="textPassword"
+                android:textColorHint="#DDDDDD"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/btn_login_selector"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/wc"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" /></LinearLayout>
+</LinearLayout>

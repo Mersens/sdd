@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gesture_psd_bg_color"
+    android:orientation="vertical" >
+
+
+        <com.shangdingdai.view.CircleImageView
+            android:id="@+id/gesture_user_img"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/icon_user_img"/>
+
+        <TextView
+            android:id="@+id/draw_gesture_psd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/gesture_draw_psd"
+            android:textColor="@color/white" 
+            android:textSize="16dp"
+         
+            />
+
+        <com.shangdingdai.view.Lock9View
+            android:id="@+id/lock_9_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="24dp"
+            app:lock9_enableVibrate="true"
+            app:lock9_lineColor="@color/blue_light"
+            app:lock9_lineWidth="4dp"
+            app:lock9_nodeAreaExpand="24dp"
+            app:lock9_nodeOnAnim="@anim/node_on_2"
+            app:lock9_nodeSize="16dp"
+            app:lock9_nodeSrc="@drawable/node_small"
+            app:lock9_vibrateTime="20" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="6dp"
+            >
+
+            <TextView
+                android:id="@+id/forget_psd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" 
+                android:layout_marginLeft="20dp"
+                android:padding="4dp"
+                android:text="@string/forget_psd" 
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:id="@+id/login_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white" 
+                android:layout_marginRight="20dp"
+                android:padding="4dp"
+                android:text="@string/login_again" 
+                android:textSize="16dp"
+                />
+            
+        </RelativeLayout>
+
+</LinearLayout>
